@@ -1,0 +1,183 @@
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+
+.left {
+    width: 35%;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+
+    background-image: url('../images/city.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
+}
+
+.left .black {
+    width: 100%;
+    height: max(20vh, 200px);
+    position:absolute;
+    top: 20vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #dfdfdf;  
+    font-size: 56px;  
+}
+
+.right {
+    width: 65%;
+    right: 0;
+    height: 100vh;
+    position: fixed;
+    background-color: #f0f0f0;
+    overflow: auto;
+}
+
+.header {
+    padding-top: 15vh;
+    padding-inline: 60px 30%;
+}
+.header h2 {
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.content {
+    background-color: #f3f3f3;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding-block: 20px;
+    height: max(35vh, 350px);
+    width: 100%;
+
+}
+.form-content {
+    padding-inline: 60px 30%;
+}
+
+
+.content h3 {
+    font-weight:500;
+    font-size: 20px;
+    margin-block: 20px;
+}
+
+.form-content label {
+   font-size: 12px; 
+   color: #2e2e2e;
+   font-weight: 500;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}  
+
+#info-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.row {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.fname,
+.lname,
+.email,
+.number,
+.password,
+.confirm-password {
+    display: inline-block;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    font-size: 14px;
+    font-family: 'Raleway';
+    padding: 8px 10px;
+    background-color: #fcfcfc;
+    border: 1px solid gray;
+    border-radius: 2px;
+    
+    
+}
+input:active {
+    color: white;
+    border: 1px solid darkgray;
+    border-radius: 2px;
+}
+input[type=password]:invalid {
+    border: 2px solid lightcoral;
+    border-radius: 2px;
+}
+
+.submit {
+    padding: 40px 60px;
+}
+.submit button {
+    padding: 12px 36px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #b97e57;
+    color: #e7e7e7;
+    border: 2px solid #e7e7e7;
+    border-radius: 10px;
+    margin-bottom: 26px;
+}
+
+.submit button:hover {
+    background-color: #a07151;
+    cursor: pointer;
+}
+
+.submit a {
+    text-decoration: none;
+    color: #b97e57;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 70
+}
