@@ -51,7 +51,7 @@ html {
     align-items: center;
     gap: 10px;
     color: #dfdfdf;  
-    font-size: 56px;  
+    font-size: 3vw;
 }
 
 .right {
@@ -132,14 +132,14 @@ input[type=password] {
     font-size: 14px;
     font-family: 'Raleway';
     padding: 8px 10px;
-    background-color: #fcfcfc;
+    background-color: #f7f7f7;
     border: 1px solid gray;
     border-radius: 2px;
-    
+    appearance: none;
     
 }
-input:active {
-    color: white;
+input:focus {
+    background-color: white;
     border: 1px solid darkgray;
     border-radius: 2px;
 }
@@ -152,15 +152,16 @@ input[type=password]:invalid {
     padding: 40px 60px;
 }
 .submit button {
-    padding: 12px 36px;
+    padding: 12px 42px;
     font-family: 'Raleway';
     font-weight: 700;
-    font-size: 14px;
+    font-size: 17px;
     background-color: #b97e57;
     color: #e7e7e7;
     border: 2px solid #e7e7e7;
     border-radius: 10px;
     margin-bottom: 26px;
+
 }
 
 .submit button:hover {
